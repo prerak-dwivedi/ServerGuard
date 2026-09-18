@@ -18,10 +18,8 @@
 198.51.100.12 - - [17/Sep/2026:10:22:48 +0530] "POST /admin-login HTTP/1.1" 401 234 "-" "Python-urllib/3.8"
 198.51.100.12 - - [17/Sep/2026:10:22:49 +0530] "POST /admin-login HTTP/1.1" 200 4500 "-" "Python-urllib/3.8"
 192.168.1.15 - - [17/Sep/2026:10:25:01 +0530] "GET /contact.html HTTP/1.1" 200 1845 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-[17/Sep/2026:10:32:00 +0530] "GET /index.html HTTP/1.1" 200 - Corrupted line missing IP
 172.16.0.12 - - [17/Sep/2026:10:35:22 +0530] "GET /../../../../etc/passwd HTTP/1.1" 403 212 "-" "curl/7.68.0"
 198.51.100.25 - - [17/Sep/2026:10:40:11 +0530] "POST /upload HTTP/1.1" 500 102 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-Half-written log entry because server crashed
 192.168.1.55 - - [17/Sep/2026:10:45:01 +0530] "GET /products HTTP/1.1" 200 8540 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 192.168.1.55 - - [17/Sep/2026:10:45:15 +0530] "GET /products/item?id=45 HTTP/1.1" 200 1024 "http://localhost/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 10.0.0.9 - - [17/Sep/2026:10:46:12 +0530] "GET /images/logo.png HTTP/1.1" 200 4521 "-" "Mozilla/5.0"
@@ -51,7 +49,6 @@ Half-written log entry because server crashed
 192.168.1.99 - - [17/Sep/2026:11:15:22 +0530] "GET /search?q=<img src=x onerror=alert(1)> HTTP/1.1" 403 543 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 192.168.1.99 - - [17/Sep/2026:11:15:30 +0530] "GET /search?q=<svg/onload=alert('XSS')> HTTP/1.1" 403 543 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 10.0.0.12 - - [17/Sep/2026:11:20:01 +0530] "GET /download/report.pdf HTTP/1.1" 200 102450 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
-ERROR: Unrecognized format string in log output buffer
 172.16.0.22 - - [17/Sep/2026:11:25:10 +0530] "GET /../../../../var/log/syslog HTTP/1.1" 403 212 "-" "curl/7.68.0"
 172.16.0.22 - - [17/Sep/2026:11:25:15 +0530] "GET /%2e%2e/%2e%2e/etc/passwd HTTP/1.1" 403 212 "-" "curl/7.68.0"
 192.168.1.15 - - [17/Sep/2026:11:30:36 +0530] "GET /index.html HTTP/1.1" 200 2326 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -90,7 +87,6 @@ ERROR: Unrecognized format string in log output buffer
 10.0.0.100 - - [17/Sep/2026:12:10:00 +0530] "GET /search?q=javascript:alert(document.cookie) HTTP/1.1" 403 543 "-" "curl/7.68.0"
 10.0.0.100 - - [17/Sep/2026:12:10:05 +0530] "GET /search?q=<iframe src=javascript:alert(1)> HTTP/1.1" 403 543 "-" "curl/7.68.0"
 192.168.1.15 - - [17/Sep/2026:12:15:36 +0530] "GET /index.html HTTP/1.1" 200 2326 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-[17/Sep/2026:12:16:00 +0530] "GET /malformed.html HTTP/1.1" 200 - Corrupted line missing IP again
 192.168.1.22 - - [17/Sep/2026:12:17:12 +0530] "GET /assets/style.css HTTP/1.1" 200 1024 "http://localhost/index.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
 172.16.0.44 - - [17/Sep/2026:12:20:00 +0530] "GET /api/data?id=1; EXEC xp_cmdshell('dir'); HTTP/1.1" 403 543 "-" "curl/7.68.0"
 198.51.100.99 - - [17/Sep/2026:12:25:01 +0530] "POST /login HTTP/1.1" 401 234 "-" "Python-urllib/3.8"
