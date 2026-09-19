@@ -1,0 +1,11 @@
+ip address,path,status
+10.0.0.5,/search?q=<script>alert('XSS')</script>,403
+192.168.1.50,"/api/data?id=1%20UNION%20SELECT%20username,password%20FROM%20users",403
+172.16.0.12,/../../../../etc/passwd,403
+172.16.0.22,/../../../../var/log/syslog,403
+172.16.0.22,/%2e%2e/%2e%2e/etc/passwd,403
+10.0.0.55,/login?user=admin'; DROP TABLE users; --,403
+172.16.0.99,/../../../../windows/win.ini,403
+172.16.0.99,/../../../../boot.ini,403
+10.0.0.100,/search?q=javascript:alert(document.cookie),403
+10.0.0.100,/search?q=<iframe src=javascript:alert(1)>,403
